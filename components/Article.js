@@ -86,6 +86,24 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+  {
+    title: 'This is the fifth article in the series',
+    date: 'July 7th, 2021',
+    firstParagraph: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a turpis lorem. Nullam pulvinar vel nibh sed condimentum. 
+          Mauris quis nisl sit amet est volutpat commodo nec vitae dolor. Donec leo nulla, imperdiet non augue at, scelerisque congue dui. 
+          Pellentesque euismod urna eget odio mattis, at scelerisque tellus rhoncus. Integer sit amet elementum urna. Maecenas felis justo, 
+          ultricies vitae suscipit non, fringilla tempus turpis. Sed ut sollicitudin neque.`,
+
+    secondParagraph: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a turpis lorem. Nullam pulvinar vel nibh sed condimentum. 
+    Mauris quis nisl sit amet est volutpat commodo nec vitae dolor. Donec leo nulla, imperdiet non augue at, scelerisque congue dui. 
+    Pellentesque euismod urna eget odio mattis, at scelerisque tellus rhoncus. Integer sit amet elementum urna. Maecenas felis justo, 
+    ultricies vitae suscipit non, fringilla tempus turpis. Sed ut sollicitudin neque.`,
+
+    thirdParagraph: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a turpis lorem. Nullam pulvinar vel nibh sed condimentum. 
+    Mauris quis nisl sit amet est volutpat commodo nec vitae dolor. Donec leo nulla, imperdiet non augue at, scelerisque congue dui. 
+    Pellentesque euismod urna eget odio mattis, at scelerisque tellus rhoncus. Integer sit amet elementum urna. Maecenas felis justo, 
+    ultricies vitae suscipit non, fringilla tempus turpis. Sed ut sollicitudin neque.`
   }
 ];
 
@@ -114,3 +132,46 @@ const data = [
   Step 5: Try adding new article object to the data array. Make sure it is in the same format as the others.
   Refresh the page to see the new article.
 */
+
+const articles = document.querySelector('.articles')
+
+function articleMaker({ title, date, firstParagraph, secondParagraph, thirdParagraph }) {
+  
+  const article = document.createElement('div')
+  const articleTitle = document.createElement('h2')
+  const articleDate = document.createElement('p')
+  const p1 = document.createElement('p')
+  const p2 = document.createElement('p')
+  const p3 = document.createElement('p')
+  const expand = document.createElement('span')
+
+  article.appendChild(articleTitle)
+  article.appendChild(articleDate)
+  article.appendChild(p1)
+  article.appendChild(p2)
+  article.appendChild(p3)
+  article.appendChild(expand)
+
+  article.classList.add('article')
+  articleDate.classList.add('date')
+  expand.classList.add('expandButton')
+
+  articleTitle.textContent = title
+  articleDate.textContent = date
+  p1.textContent = firstParagraph
+  p2.textContent = secondParagraph
+  p3.textContent = thirdParagraph
+  expand.textContent = '+'
+
+  expand.addEventListener('click', () => {
+    article.classList.toggle('article-open')
+  })
+
+  return article
+
+}
+
+data.forEach(obj => {
+  const article = articleMaker(obj)
+  articles.appendChild(article)
+})
