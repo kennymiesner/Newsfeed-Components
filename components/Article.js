@@ -104,6 +104,42 @@ const data = [
     Mauris quis nisl sit amet est volutpat commodo nec vitae dolor. Donec leo nulla, imperdiet non augue at, scelerisque congue dui. 
     Pellentesque euismod urna eget odio mattis, at scelerisque tellus rhoncus. Integer sit amet elementum urna. Maecenas felis justo, 
     ultricies vitae suscipit non, fringilla tempus turpis. Sed ut sollicitudin neque.`
+  },
+  {
+    title: 'This is the sixth article in the series',
+    date: 'July 7th, 2021',
+    firstParagraph: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a turpis lorem. Nullam pulvinar vel nibh sed condimentum. 
+          Mauris quis nisl sit amet est volutpat commodo nec vitae dolor. Donec leo nulla, imperdiet non augue at, scelerisque congue dui. 
+          Pellentesque euismod urna eget odio mattis, at scelerisque tellus rhoncus. Integer sit amet elementum urna. Maecenas felis justo, 
+          ultricies vitae suscipit non, fringilla tempus turpis. Sed ut sollicitudin neque.`,
+
+    secondParagraph: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a turpis lorem. Nullam pulvinar vel nibh sed condimentum. 
+    Mauris quis nisl sit amet est volutpat commodo nec vitae dolor. Donec leo nulla, imperdiet non augue at, scelerisque congue dui. 
+    Pellentesque euismod urna eget odio mattis, at scelerisque tellus rhoncus. Integer sit amet elementum urna. Maecenas felis justo, 
+    ultricies vitae suscipit non, fringilla tempus turpis. Sed ut sollicitudin neque.`,
+
+    thirdParagraph: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a turpis lorem. Nullam pulvinar vel nibh sed condimentum. 
+    Mauris quis nisl sit amet est volutpat commodo nec vitae dolor. Donec leo nulla, imperdiet non augue at, scelerisque congue dui. 
+    Pellentesque euismod urna eget odio mattis, at scelerisque tellus rhoncus. Integer sit amet elementum urna. Maecenas felis justo, 
+    ultricies vitae suscipit non, fringilla tempus turpis. Sed ut sollicitudin neque.`
+  },
+  {
+    title: 'This is the seventh article in the series',
+    date: 'July 7th, 2021',
+    firstParagraph: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a turpis lorem. Nullam pulvinar vel nibh sed condimentum. 
+          Mauris quis nisl sit amet est volutpat commodo nec vitae dolor. Donec leo nulla, imperdiet non augue at, scelerisque congue dui. 
+          Pellentesque euismod urna eget odio mattis, at scelerisque tellus rhoncus. Integer sit amet elementum urna. Maecenas felis justo, 
+          ultricies vitae suscipit non, fringilla tempus turpis. Sed ut sollicitudin neque.`,
+
+    secondParagraph: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a turpis lorem. Nullam pulvinar vel nibh sed condimentum. 
+    Mauris quis nisl sit amet est volutpat commodo nec vitae dolor. Donec leo nulla, imperdiet non augue at, scelerisque congue dui. 
+    Pellentesque euismod urna eget odio mattis, at scelerisque tellus rhoncus. Integer sit amet elementum urna. Maecenas felis justo, 
+    ultricies vitae suscipit non, fringilla tempus turpis. Sed ut sollicitudin neque.`,
+
+    thirdParagraph: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a turpis lorem. Nullam pulvinar vel nibh sed condimentum. 
+    Mauris quis nisl sit amet est volutpat commodo nec vitae dolor. Donec leo nulla, imperdiet non augue at, scelerisque congue dui. 
+    Pellentesque euismod urna eget odio mattis, at scelerisque tellus rhoncus. Integer sit amet elementum urna. Maecenas felis justo, 
+    ultricies vitae suscipit non, fringilla tempus turpis. Sed ut sollicitudin neque.`
   }
 ];
 
